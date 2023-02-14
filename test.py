@@ -16,12 +16,12 @@ if uploaded_file is not None:
     
     hwe_model_mul_add = ExponentialSmoothing(df["sales"][:71], seasonal = "mul", trend = "add", seasonal_periods = 12).fit()
     
-   pred = hwe_model_mul_add.predict(start = df.index[0], end = df.index[-1])
+    newdata_pred = hwe_model_mul_add.predict(start = df.index[0], end = df.index[-1])
     
     
     st.subheader("Cement sales Prediction App")
    
-    st.write("sales Forecast: ", pred)
+    st.write("sales Forecast: ", newdata_pred)
    
     
     st.subheader("Thanks for visit.")
