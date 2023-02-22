@@ -7,7 +7,7 @@ from statsmodels.tsa.holtwinters import SimpleExpSmoothing # SES
 from statsmodels.tsa.holtwinters import Holt # Holts Exponential Smoothing
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
-st.markdown(f'<h1 style="color:#33ff33;font-size:24px;">{"ColorMeBlue text”"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#33ff33;font-size:24px;">{"Cement Sales Forecast Prediction App”"}</h1>', unsafe_allow_html=True)
 st.header('Cement Sales Forecast Prediction App')
 uploaded_file = st.file_uploader(" ", type=['xlsx'])
 
