@@ -8,7 +8,7 @@ from statsmodels.tsa.holtwinters import Holt # Holts Exponential Smoothing
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
 st.markdown(f'<h1 style="color:#33ff33;font-size:24px;">{"Cement Sales Forecast Prediction App"}</h1>', unsafe_allow_html=True)
-uploaded_file = st.file_uploader(" ", type=['xlsx'])
+uploaded_file = st.file_uploader(" ", type=['xlsx'],['csv'])
 
 if uploaded_file is not None:     
     df = pd.read_excel(uploaded_file)
